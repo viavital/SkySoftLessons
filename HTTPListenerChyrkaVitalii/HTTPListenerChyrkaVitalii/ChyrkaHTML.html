@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .List {
+            background-color: antiquewhite;
+            align-content: center;
+        }
+
+        .header {
+            height: 50px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            height: 50px;
+        }
+
+        .grid {
+            display: grid;
+            min-height: calc(100vh - 150px);
+            grid-template-columns: 250px auto 250px;
+        }
+
+        .leftBlock {
+            grid-column: 1;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        .centralBlock {
+            grid-column: 2;
+            background-color: aqua;
+            text-align: left;
+        }
+
+        .rightBlock {
+            grid-column: 3;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+    
+    <meta charset="utf-8" />
+    <title> Some header</title>
+</head>
+<body class="Body">
+    
+    <div class="header">
+        <h2>50px</h2>
+    </div>
+    <hr />
+
+    <div class="grid">
+        <div class="leftBlock"><p1>250px</p1> </div>
+        <div class="centralBlock">
+            <p1>List</p1>
+            <p2>
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                </ul>
+            </p2>
+        </div>
+        <div class="rightBlock"><p1>250px</p1></div>
+    </div>
+    <footer class="footer">
+        <hr />
+        <div>
+            <h2>50px</h2>
+        </div>
+    </footer>
+</body>
+</html>
+
